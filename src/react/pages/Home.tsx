@@ -3,12 +3,12 @@ import React, { FC, ReactElement, useState, Dispatch, SetStateAction } from "rea
 import styled from "styled-components";
 import { Container, Grid, Modal, Tooltip, Typography } from "@material-ui/core";
 import { Button } from '@material-ui/core';
-import { KeyIcon } from "../components/icons/KeyIcon";
 import { NetworkPicker } from "../components/NetworkPicker";
 import { ReuseMnemonicActionPicker } from "../components/ReuseMnemonicActionPicker";
 import { tooltips } from "../constants";
 import { Network, StepSequenceKey, ReuseMnemonicAction } from '../types'
 import VersionFooter from "../components/VersionFooter";
+import BOALogo from "../assets/bosagora-normal-blue-1.png";
 
 const StyledMuiContainer = styled(Container)`
   display: flex;
@@ -52,6 +52,10 @@ const Dotted = styled.span`
   text-decoration-line: underline;
 `;
 
+const LogoBox = styled.img`
+  height : 252px;
+`;
+
 type HomeProps = {
   network: Network,
   setNetwork: Dispatch<SetStateAction<Network>>
@@ -59,9 +63,9 @@ type HomeProps = {
 
 /**
  * Home page and entry point of the app.  This page displays general information
- * and options for a user to create a new secret recovery phrase or use an 
+ * and options for a user to create a new secret recovery phrase or use an
  * existing one.
- * 
+ *
  * @param props passed in data for the component to use
  * @returns the react element to render
  */
@@ -175,7 +179,7 @@ const Home: FC<HomeProps> = (props): ReactElement => {
       </Modal>
 
       <LandingHeader variant="h1">Welcome!</LandingHeader>
-      <KeyIcon />
+      <LogoBox src={BOALogo}/>
       <SubHeader>Your key generator for staking on Ethereum.<br/>You should run this tool&nbsp;
       <Tooltip title={tooltips.OFFLINE}><Dotted>offline</Dotted></Tooltip> for your own security.</SubHeader>
 
