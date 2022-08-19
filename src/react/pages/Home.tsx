@@ -8,6 +8,7 @@ import { NetworkPicker } from "../components/NetworkPicker";
 import { tooltips } from "../constants";
 import { Network, StepSequenceKey } from '../types'
 import VersionFooter from "../components/VersionFooter";
+import BOALogo from "../assets/bosagora-normal-blue-1.png";
 
 const StyledMuiContainer = styled(Container)`
   display: flex;
@@ -44,6 +45,10 @@ const InfoLabel = styled.span`
 const OptionsGrid = styled(Grid)`
   margin-top: 35px;
   align-items: center;
+`;
+
+const LogoBox = styled.img`
+  height : 252px;
 `;
 
 type HomeProps = {
@@ -130,7 +135,7 @@ const Home: FC<HomeProps> = (props): ReactElement => {
       </Modal>
 
       <LandingHeader variant="h1">Welcome!</LandingHeader>
-      <KeyIcon />
+      <LogoBox src={BOALogo}/>
       <SubHeader>Your key generator for staking on Ethereum</SubHeader>
 
       <Links>
