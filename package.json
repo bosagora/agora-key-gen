@@ -1,10 +1,11 @@
 {
-  "name": "wagyukeygen",
-  "productName": "Wagyu Key Gen",
+  "name": "agorakeygen",
+  "productName": "AGORA Key Gen",
   "version": "1.7.0",
-  "description": "GUI key generation tool wrapping the deposit cli.",
+  "description": "GUI key generation tool wrapping the deposit cli for AGORA.",
   "main": "./build/electron/index.js",
   "author": "Colfax Selby <colfax.selby@gmail.com>",
+  "contributors" : [{"name":"BOSAGORA DevOps", "email":"devops@bosagora.io", "url":"https://github.com/bosagora"}],
   "license": "GPL-3.0",
   "devDependencies": {
     "@types/react": "^17.0.14",
@@ -13,7 +14,7 @@
     "@types/styled-components": "^5.1.11",
     "@types/tmp": "^0.2.2",
     "electron": "18.3.15",
-    "electron-builder": "^22.14.5",
+    "electron-builder": "^23.3.3",
     "ts-loader": "^9.2.3",
     "typescript": "^4.3.5",
     "webpack": "^5.64.3",
@@ -46,8 +47,8 @@
     "web3-utils": "^1.7.0"
   },
   "build": {
-    "appId": "gg.wagyu.keygen",
-    "productName": "Wagyu Key Gen",
+    "appId": "io.bosagora.agorakeygen",
+    "productName": "Agora Key Gen",
     "files": [
       "build/**/*",
       "package.json"
