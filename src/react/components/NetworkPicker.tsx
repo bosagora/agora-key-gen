@@ -43,7 +43,7 @@ type NetworkPickerProps = {
 
 /**
  * This is the network picker modal component where the user selects the desired network.
- * 
+ *
  * @param props.handleCloseNetworkModal function to handle closing the network modal
  * @param props.setNetwork update the selected network
  * @param props.network the selected network
@@ -69,9 +69,8 @@ export const NetworkPicker = (props: NetworkPickerProps) => {
             <RadioGroup aria-label="gender" name="gender1" value={props.network} onChange={networkChanged}>
               <FormControlLabel value={Network.MAINNET} control={<Radio />} label={Network.MAINNET} />
               <Divider />
-              <SubHeader>Testnets</SubHeader>
-              <FormControlLabel value={Network.GOERLI} control={<Radio />} label={Network.GOERLI} />
-              <FormControlLabel value={Network.ZHEJIANG} control={<Radio />} label={Network.ZHEJIANG} />
+              <FormControlLabel value={Network.TESTNET} control={<Radio />} label={Network.TESTNET} />
+              <FormControlLabel value={Network.DEVTNET} control={<Radio />} label={Network.DEVTNET} />
             </RadioGroup>
           </FormControl>
         </div>
