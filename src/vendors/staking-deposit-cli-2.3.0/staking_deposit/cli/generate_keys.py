@@ -34,9 +34,10 @@ from staking_deposit.utils.intl import (
 from staking_deposit.settings import (
     ALL_CHAINS,
     MAINNET,
-    PRATER,
     get_chain_setting,
 )
+
+from staking_deposit.utils import config
 
 
 def get_password(text: str) -> str:
@@ -88,8 +89,8 @@ def generate_keys_arguments_decorator(function: Callable[..., Any]) -> Callable[
             param_decls='--chain',
             prompt=choice_prompt_func(
                 lambda: load_text(['chain', 'prompt'], func='generate_keys_arguments_decorator'),
-                # Since `prater` is alias of `goerli`, do not show `prater` in the prompt message.
-                list(key for key in ALL_CHAINS.keys() if key != PRATER)
+                
+                list(key for key in ALL_CHAINS.keys())
             ),
         ),
         jit_option(
@@ -148,4 +149,5 @@ def generate_keys(ctx: click.Context, validator_start_index: int,
     if not verify_deposit_data_json(deposits_file, credentials.credentials):
         raise ValidationError(load_text(['err_verify_deposit']))
     click.echo(load_text(['msg_creation_success']) + folder)
-    click.pause(load_text(['msg_pause']))
+    if not config.non_interactive:
+        click.pause(load_text(['msg_pause']))

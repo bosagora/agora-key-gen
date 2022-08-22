@@ -10,32 +10,22 @@ class BaseChainSetting(NamedTuple):
 
 
 MAINNET = 'mainnet'
-ROPSTEN = 'ropsten'
-GOERLI = 'goerli'
-PRATER = 'prater'
-KILN = 'kiln'
-SEPOLIA = 'sepolia'
+TESTNET = 'testnet'
+DEVNET = 'devnet'
 
 
 # Mainnet setting
 MainnetSetting = BaseChainSetting(NETWORK_NAME=MAINNET, GENESIS_FORK_VERSION=bytes.fromhex('00000000'))
-# Ropsten setting
-RopstenSetting = BaseChainSetting(NETWORK_NAME=ROPSTEN, GENESIS_FORK_VERSION=bytes.fromhex('80000069'))
-# Goerli setting
-GoerliSetting = BaseChainSetting(NETWORK_NAME=GOERLI, GENESIS_FORK_VERSION=bytes.fromhex('00001020'))
-# Merge Testnet (spec v1.1.9)
-KilnSetting = BaseChainSetting(NETWORK_NAME=KILN, GENESIS_FORK_VERSION=bytes.fromhex('70000069'))
-# Sepolia setting
-SepoliaSetting = BaseChainSetting(NETWORK_NAME=SEPOLIA, GENESIS_FORK_VERSION=bytes.fromhex('90000069'))
+# Testnet setting
+TestnetSetting = BaseChainSetting(NETWORK_NAME=TESTNET, GENESIS_FORK_VERSION=bytes.fromhex('00001000'))
+# Devnet setting
+DevnetSetting = BaseChainSetting(NETWORK_NAME=DEVNET, GENESIS_FORK_VERSION=bytes.fromhex('00002000'))
 
 
 ALL_CHAINS: Dict[str, BaseChainSetting] = {
     MAINNET: MainnetSetting,
-    ROPSTEN: RopstenSetting,
-    GOERLI: GoerliSetting,
-    PRATER: GoerliSetting,  # Prater is the old name of the Prater/Goerli testnet
-    KILN: KilnSetting,
-    SEPOLIA: SepoliaSetting,
+    TESTNET: TestnetSetting,
+    DEVNET: DevnetSetting,
 }
 
 
