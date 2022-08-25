@@ -1,0 +1,4 @@
+[submodule "src/vendors/staking-deposit-cli"]
+	path = src/vendors/staking-deposit-cli
+	url = https://github.com/zeroone-boa/staking-deposit-cli.git
+    branch = agora
