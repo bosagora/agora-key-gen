@@ -4,8 +4,14 @@
   "version": "1.7.0",
   "description": "GUI key generation tool wrapping the deposit cli for AGORA.",
   "main": "./build/electron/index.js",
-  "author": "Colfax Selby <colfax.selby@gmail.com>",
-  "contributors" : [{"name":"BOSAGORA DevOps", "email":"devops@bosagora.io", "url":"https://github.com/bosagora"}],
+  "author": "BOSAGORA Devops <devops@bosagora.io>",
+  "contributors": [
+    {
+      "name": "Colfax Selby",
+      "email": "colfax.selby@gmail.com",
+      "url": "https://github.com/stake-house/wagyu-key-gen"
+    }
+  ],
   "license": "GPL-3.0",
   "devDependencies": {
     "@types/react": "^17.0.14",
@@ -27,7 +33,11 @@
     "buildcliwin": "src/scripts/bundle_proxy_win.bat",
     "start": "electron ./build/electron/index.js",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "build:linux": "electron-builder -l --x64",
+    "build:mac": "electron-builder -m --x64",
+    "build:arm64": "electron-builder --mac --arm64",
+    "build:win64": "electron-builder -w --x64"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
