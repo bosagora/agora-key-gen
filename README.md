@@ -1,14 +1,14 @@
 # Agora Key Gen
 [![gitpoap badge](https://public-api.gitpoap.io/v1/repo/stake-house/wagyu-key-gen/badge)](https://www.gitpoap.io/gh/stake-house/wagyu-key-gen)
 
-Wagyu Key Gen is a GUI application providing functionality to the [eth2.0-deposit-cli](https://github.com/ethereum/eth2.0-deposit-cli). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
+Agora Key Gen is a GUI application providing functionality to the [eth2.0-deposit-cli](https://github.com/ethereum/eth2.0-deposit-cli). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
 
-### Download wagyu at [https://wagyu.gg](https://wagyu.gg)
+[//]: # (### Download Agora at [https://wagyu.gg]&#40;https://wagyu.gg&#41;)
 
-### Wagyu Audit by HashCloak [Wagyu Key Gen Audit Report](https://github.com/stake-house/wagyu-key-gen/files/7693548/Wagyu.Key.Gen.Audit.Report.pdf)
+[//]: # (### Wagyu Audit by HashCloak [Wagyu Key Gen Audit Report]&#40;https://github.com/stake-house/wagyu-key-gen/files/7693548/Wagyu.Key.Gen.Audit.Report.pdf&#41;)
 
 ## Environment Configuration & Dependencies
-Prior to running Wagyu Key Gen a few dependencies need to be installed. 
+Prior to running Agora Key Gen a few dependencies need to be installed. 
 
 ### Ubuntu 20.04 and later
 Execute all those commands in your terminal to setup your dev environment.
@@ -27,8 +27,8 @@ pip3 install pyinstaller
 
 sudo npm install -g yarn
 
-git clone --recursive https://github.com/zeroone-boa/wagyu-key-gen
-cd wagyu-key-gen
+git clone --recursive https://github.com/zeroone-boa/agora-key-gen
+cd agora-key-gen
 
 yarn install
 yarn buildcli
@@ -57,8 +57,8 @@ pip3 install pyinstaller
 
 sudo corepack enable
 
-git clone --recursive https://github.com/zeroone-boa/wagyu-key-gen
-cd wagyu-key-gen
+git clone --recursive https://github.com/zeroone-boa/agora-key-gen
+cd agora-key-gen
 
 yarn install
 yarn build
@@ -84,8 +84,8 @@ set PATH=%APPDATA%\python\Python310\Scripts;%PATH%
 
 npm install -g yarn
 
-git clone --recursive https://github.com/zeroone-boa/wagyu-key-gen
-cd wagyu-key-gen
+git clone --recursive https://github.com/zeroone-boa/agora-key-gen
+cd agora-key-gen
 
 yarn install
 yarn buildcliwin
@@ -96,7 +96,7 @@ Execute all those commands in your terminal to setup your dev environment.  You 
 
 ```console
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/wagyu/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/agora/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 git --version
@@ -114,14 +114,14 @@ brew install node
 pip3 install pyinstaller
 npm install -g yarn
 
-git clone --recursive https://github.com/zeroone-boa/wagyu-key-gen
-cd wagyu-key-gen
+git clone --recursive https://github.com/zeroone-boa/agora-key-gen
+cd agora-key-gen
 
 yarn install
 yarn buildcli
 ```
 
-## Start Wagyu Key Gen
+## Start Agora Key Gen
 Run the following commands in the repository directory:
 
  - `yarn build`
@@ -130,27 +130,33 @@ Run the following commands in the repository directory:
  - `yarn start`
 
 ## To run diagnostics
-To open dev tools when in Wagyu Key Gen use `Ctrl` + `Shift` + `I`
+To open dev tools when in Agora Key Gen use `Ctrl` + `Shift` + `I`
+
+## Git Submodule update
+When need to submodule update use that : 
+```console 
+git submodule update --recursive
+```
 
 ## Bundling
-We use [electron-builder](https://www.electron.build/) to create executable bundles for Wagyu Key Gen.  Run the following to create a bundle:
+We use [electron-builder](https://www.electron.build/) to create executable bundles for Agora Key Gen.  Run the following to create a bundle:
  - `yarn run build`
  - `yarn run buildcli` (or `yarn run buildcliwin` on Windows)
  - `yarn run dist`
 
 Your assets will be in the `dist/` folder.
 
-## Design
-Current designs: https://www.figma.com/file/jcF78fVjndvM2hOPvifl0N/Wagyu-Key?node-id=1%3A4
+[//]: # (## Design)
+[//]: # (Current designs: https://www.figma.com/file/jcF78fVjndvM2hOPvifl0N/Wagyu-Key?node-id=1%3A4)
 
-## Funding
+[//]: # (## Funding)
 
-If you would like to help us with funding this project, you can donate with our [Gitcoin grant](https://gitcoin.co/grants/2112/stakehouse-wagyu-tooling-suite-easy-to-use-tools-) or you can send your funds directly to `wagyutools.eth`.
+[//]: # (If you would like to help us with funding this project, you can donate with our [Gitcoin grant]&#40;https://gitcoin.co/grants/2112/stakehouse-wagyu-tooling-suite-easy-to-use-tools-&#41; or you can send your funds directly to `wagyutools.eth`.)
 
-## Support
-Reach out to the EthStaker community:
- - on [discord](https://discord.io/ethstaker)
- - on [reddit](https://www.reddit.com/r/ethstaker/)
+[//]: # (## Support)
+[//]: # (Reach out to the EthStaker community:)
+[//]: # ( - on [discord]&#40;https://discord.io/ethstaker&#41;)
+[//]: # ( - on [reddit]&#40;https://www.reddit.com/r/ethstaker/&#41;)
 
 ## License
 [GPL](LICENSE)
