@@ -3,7 +3,6 @@ import React, { FC, ReactElement, useState, Dispatch, SetStateAction } from "rea
 import styled from "styled-components";
 import { Container, Grid, Modal, Tooltip, Typography } from "@material-ui/core";
 import { Button } from '@material-ui/core';
-import { KeyIcon } from "../components/icons/KeyIcon";
 import { NetworkPicker } from "../components/NetworkPicker";
 import { tooltips } from "../constants";
 import { Network, StepSequenceKey } from '../types'
@@ -58,9 +57,9 @@ type HomeProps = {
 
 /**
  * Home page and entry point of the app.  This page displays general information
- * and options for a user to create a new secret recovery phrase or use an 
+ * and options for a user to create a new secret recovery phrase or use an
  * existing one.
- * 
+ *
  * @param props passed in data for the component to use
  * @returns the react element to render
  */
