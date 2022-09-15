@@ -3,7 +3,6 @@ import React, { FC, ReactElement, useState, Dispatch, SetStateAction } from "rea
 import styled from "styled-components";
 import { Container, Grid, Modal, Tooltip, Typography } from "@material-ui/core";
 import { Button } from '@material-ui/core';
-import { KeyIcon } from "../components/icons/KeyIcon";
 import { NetworkPicker } from "../components/NetworkPicker";
 import { tooltips } from "../constants";
 import { Network, StepSequenceKey } from '../types'
