@@ -184,7 +184,7 @@ const Home: FC<HomeProps> = (props): ReactElement => {
       <Tooltip title={tooltips.OFFLINE}><Dotted>offline</Dotted></Tooltip> for your own security.</SubHeader>
 
       <Links>
-        <InfoLabel>Github:</InfoLabel> https://github.com/zeroone-boa/wagyu-key-gen
+        <InfoLabel>Github:</InfoLabel> https://github.com/bosagora/agora-key-gen
         <br />
         <InfoLabel>Support:</InfoLabel> https://t.me/bosagora_eng
       </Links>
