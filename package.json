@@ -1,7 +1,7 @@
 {
   "name": "agorakeygen",
   "productName": "AGORA Key Gen",
-  "version": "1.5.0.2",
+  "version": "1.5.0",
   "description": "GUI key generation tool wrapping the deposit cli for AGORA.",
   "main": "./build/electron/index.js",
   "author": "BOSAGORA Devops <devops@bosagora.io>",
@@ -38,8 +38,8 @@
     "build:mac": "electron-builder -m --x64",
     "build:arm64": "electron-builder --mac --arm64",
     "build:win64": "electron-builder -w --x64",
-    "build:app" : "yarn run build && yarn run buildcli && yarn run build:arm64 && yarn run build:mac && yarn run build:linux",
-    "build:win" : "yarn run build && yarn run buildcli && yarn run build:win64"
+    "build:app": "yarn run build && yarn run buildcli && yarn run build:arm64 && yarn run build:mac && yarn run build:linux",
+    "build:win": "yarn run build && yarn run buildcliwin && yarn run build:win64"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -71,8 +71,10 @@
       "static/icon.png"
     ],
     "mac": {
-      "target": ["default"],
-      "icon" :  "static/icon.png",
+      "target": [
+        "default"
+      ],
+      "icon": "static/icon.png",
       "category": "public.app-category.utilities"
     },
     "linux": {
