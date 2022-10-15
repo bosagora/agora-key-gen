@@ -1,11 +1,9 @@
 # Agora Key Gen
-[![gitpoap badge](https://public-api.gitpoap.io/v1/repo/stake-house/wagyu-key-gen/badge)](https://www.gitpoap.io/gh/stake-house/wagyu-key-gen)
 
-Agora Key Gen is a GUI application providing functionality to the [agora-deposit-cli](https://github.com/bosagora/agora-deposit-cli). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
+Agora Key Gen is a GUI application providing functionality to the [agora-deposit-cli](https://github.com/bosagora/agora-deposit-cli).  
+It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
 
-[//]: # (### Download Agora at [https://wagyu.gg]&#40;https://wagyu.gg&#41;)
-
-[//]: # (### Wagyu Audit by HashCloak [Wagyu Key Gen Audit Report]&#40;https://github.com/stake-house/wagyu-key-gen/files/7693548/Wagyu.Key.Gen.Audit.Report.pdf&#41;)
+### Audit by HashCloak [Key Gen Audit Report](https://github.com/stake-house/wagyu-key-gen/files/7693548/Wagyu.Key.Gen.Audit.Report.pdf)
 
 ## Environment Configuration & Dependencies
 Prior to running Agora Key Gen a few dependencies need to be installed. 
@@ -145,18 +143,6 @@ We use [electron-builder](https://www.electron.build/) to create executable bund
  - `yarn run dist`
 
 Your assets will be in the `dist/` folder.
-
-[//]: # (## Design)
-[//]: # (Current designs: https://www.figma.com/file/jcF78fVjndvM2hOPvifl0N/Wagyu-Key?node-id=1%3A4)
-
-[//]: # (## Funding)
-
-[//]: # (If you would like to help us with funding this project, you can donate with our [Gitcoin grant]&#40;https://gitcoin.co/grants/2112/stakehouse-wagyu-tooling-suite-easy-to-use-tools-&#41; or you can send your funds directly to `wagyutools.eth`.)
-
-[//]: # (## Support)
-[//]: # (Reach out to the EthStaker community:)
-[//]: # ( - on [discord]&#40;https://discord.io/ethstaker&#41;)
-[//]: # ( - on [reddit]&#40;https://www.reddit.com/r/ethstaker/&#41;)
 
 ## License
 [GPL](LICENSE)
