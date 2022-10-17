@@ -27,7 +27,7 @@ pip3 install pyinstaller
 
 sudo npm install -g yarn
 
-git clone --recursive https://github.com/zeroone-boa/agora-key-gen
+git clone --recursive https://github.com/bosagora/agora-key-gen
 cd agora-key-gen
 
 yarn install
@@ -57,7 +57,7 @@ pip3 install pyinstaller
 
 sudo corepack enable
 
-git clone --recursive https://github.com/zeroone-boa/agora-key-gen
+git clone --recursive https://github.com/bosagora/agora-key-gen
 cd agora-key-gen
 
 yarn install
@@ -84,7 +84,7 @@ set PATH=%APPDATA%\python\Python310\Scripts;%PATH%
 
 npm install -g yarn
 
-git clone --recursive https://github.com/zeroone-boa/agora-key-gen
+git clone --recursive https://github.com/bosagora/agora-key-gen
 cd agora-key-gen
 
 yarn install
@@ -114,7 +114,7 @@ brew install node
 pip3 install pyinstaller
 npm install -g yarn
 
-git clone --recursive https://github.com/zeroone-boa/agora-key-gen
+git clone --recursive https://github.com/bosagora/agora-key-gen
 cd agora-key-gen
 
 yarn install
