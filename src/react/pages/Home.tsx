@@ -138,7 +138,7 @@ const Home: FC<HomeProps> = (props): ReactElement => {
       <SubHeader>Your key generator for staking on Agora</SubHeader>
 
       <Links>
-        <InfoLabel>Github:</InfoLabel> https://github.com/zeroone-boa/agora-key-gen
+        <InfoLabel>Github:</InfoLabel> https://github.com/bosagora/agora-key-gen
         <br />
         <InfoLabel>Support:</InfoLabel> https://t.me/bosagora_eng
       </Links>
