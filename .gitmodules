@@ -1,0 +1,4 @@
+[submodule "src/vendors/agora-deposit-cli"]
+	path = src/vendors/agora-deposit-cli
+	url = https://github.com/bosagora/agora-deposit-cli.git
+	branch = agora
