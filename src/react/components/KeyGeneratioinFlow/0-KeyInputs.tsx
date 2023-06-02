@@ -38,9 +38,9 @@ const WithdrawalNotice = styled(Typography)`
 
 /**
  * This page gathers data about the keys to generate for the user
- * 
+ *
  * @param props self documenting parameters passed in
- * @returns 
+ * @returns
  */
 const KeyInputs = (props: GenerateKeysProps) => {
 
@@ -123,7 +123,7 @@ const KeyInputs = (props: GenerateKeysProps) => {
               <Tooltip title={tooltips.ETH1_WITHDRAW_ADDRESS}>
                 <AddressTextField
                   id="eth1-withdraw-address"
-                  label="Ethereum Withdrawal Address (Optional)"
+                  label="BOSagora Withdrawal Address (Optional)"
                   variant="outlined"
                   value={props.withdrawalAddress}
                   onChange={updateEth1WithdrawAddress}
