@@ -52,9 +52,9 @@ const WithdrawalNotice = styled(Typography)`
 
 /**
  * This page gathers data about the keys to generate for the user
- * 
+ *
  * @param props self documenting parameters passed in
- * @returns 
+ * @returns
  */
 const MainInputs = (props: GenerateKeysProps) => {
 
@@ -78,7 +78,7 @@ const MainInputs = (props: GenerateKeysProps) => {
   return (
     <Grid container direction="row" justifyContent="center" alignItems="center" spacing={2}>
       <Grid item xs={3}>
-        <Tooltip title={tooltips.BTEC_START_INDEX}>
+        <Tooltip title={tooltips.BTEC_START_INDEX} arrow>
           <IndexTextField
             id="index"
             label="Start index"
@@ -128,7 +128,7 @@ const MainInputs = (props: GenerateKeysProps) => {
         <Tooltip title={tooltips.BTEC_WITHDRAW_ADDRESS}>
           <AddressTextField
             id="eth1-withdraw-address"
-            label="Ethereum Withdrawal Address"
+            label="BOSagora Withdrawal Address"
             variant="outlined"
             value={props.withdrawalAddress}
             onChange={updateEth1WithdrawAddress}

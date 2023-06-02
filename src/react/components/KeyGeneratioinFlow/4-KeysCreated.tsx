@@ -20,7 +20,7 @@ const QuietText = styled(Typography)`
 
 /**
  * The final page displaying key location and information about them.
- * 
+ *
  * @param props self documenting paramenters passed in
  * @returns the react element to render
  */
@@ -56,7 +56,7 @@ const KeysCreated: FC<KeysCreatedProps> = (props): ReactElement => {
             </Typography>
             <LoudText>Deposit data file(s) (ex. deposit_data-xxxxxx.json)</LoudText>
             <Typography variant="body2" align="left">
-              This file represents public information about your validator.  It will be required to execute your deposit through the Ethereum Launchpad.  It can be recreated from your secret recovery phrase if necessary.
+              This file represents public information about your validator.  It will be required to execute your deposit through the Agora Staking.  It can be recreated from your secret recovery phrase if necessary.
             </Typography>
           </Box>
           <Box sx={{ m: 2 }}>
