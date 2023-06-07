@@ -26,7 +26,7 @@ const GenerateMnemonic: FC<GenerateMnemonicProps> = (props): ReactElement => {
       <Grid item xs={10}>
         <Box sx={{ m: 2 }}>
           <Typography variant="body1" align="left">
-            In this step, we'll generate a Secret Recovery Phrase (traditionally referred to as a "mnemonic") and a set of validator keys for you. For more information, visit: https://kb.beaconcha.in/ethereum-2-keys
+            In this step, we'll generate a Secret Recovery Phrase (traditionally referred to as a "mnemonic") and a set of validator keys for you.
           </Typography>
         </Box>
         <Box sx={{ m: 2 }}>
