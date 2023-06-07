@@ -58,6 +58,7 @@ const KeysCreated: FC<KeysCreatedProps> = (props): ReactElement => {
             <Typography variant="body2" align="left">
               This file represents public information about your validator.  It will be required to execute your deposit through the Agora Staking.  It can be recreated from your secret recovery phrase if necessary.
             </Typography>
+            <LoudText>Voter keystore file(s) (ex. voter-keystore-m_xxxxx_xxxx_x_x_x-xxxxxxxxxx.json)</LoudText>
           </Box>
           <Box sx={{ m: 2 }}>
             <LoudText>Secret Recovery Phrase (24 words)</LoudText>
