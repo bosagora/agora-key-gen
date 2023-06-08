@@ -47,9 +47,6 @@ const KeysCreated: FC<KeysCreatedProps> = (props): ReactElement => {
             </Typography>
           </Box>
           <Box sx={{ m: 2 }}>
-            <Typography variant="body1" align="left">
-              There are two different files, here is a description of each:
-            </Typography>
             <LoudText>Keystore file(s) (ex. keystore-xxxxxxx.json)</LoudText>
             <Typography variant="body2" align="left">
               This file controls your ability to sign transactions.  It will be required to set up your validator.  Do not share with anyone.  It can be recreated from your secret recovery phrase if necessary.
